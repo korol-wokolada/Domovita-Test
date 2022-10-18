@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domovita</title>
+    <link rel="stylesheet" href="./Style/normalize.css" />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#" class="link-logo">
+          <img src=".//images/Logo_domovita.svg" alt="Domovita" />
+        </a>
+      </div>
+    </header>
+    <hr />
+    <h1>Оформление бронирования</h1>
+    <div class="wrapper">
+      <section class="flat-information">
+        <div class="appartment_form">
+          <div class="appartment">
+            <div class="appartment_img"></div>
+            <div class="appartment_inform">
+              <p class="flat">
+                3-комн. квартира в Минске пр-т Независимости, д. 14
+              </p>
+              <div class="area">
+                <span class="area_icon"></span>Первомайский р-н
+                <div class="metro_station">
+                  <span class="metro_icon"></span>Уручье
+                </div>
+              </div>
+              <div class="apartment-improvement">
+                <p class="bed">2 кровати</p>
+                <span class="point"></span>
+                <p class="bathroom">Совмещенный санузел</p>
+              </div>
+            </div>
+          </div>
+          <hr class="section_two" />
+          <p class="pay_details">Детали стоимости:</p>
+          <div class="week-pay">
+            <p class="week_pay_calculate">24$ x 7 дней</p>
+            <p class="week_sum">434.16 BYN</p>
+          </div>
+          <div class="prepayment">
+            <div class="prepayment_text">
+              Предоплата
+              <span class="prepayment_icon">15%</span>
+            </div>
+            <p class="prepayment_sum">65.1 BYN</p>
+          </div>
+          <hr class="section_two" />
+          <div class="prepayment_for">
+            <p class="prepayment_for_text">Предоплата за бронирование:</p>
+            <p class="prepayment_for_sum">65.1 BYN</p>
+          </div>
+        </div>
+        <div class="owner_information">
+          <span class="owner_icon"></span>
+          <div class="owner">
+            <p class="owner_name">Наталья</p>
+            <p>Собственник</p>
+          </div>
+        </div>
+      </section>
+      <section class="booking">
+        <p class="trip">Ваша поездка:</p>
+        <div class="trip_date_guests">
+          <div class="trip_date">
+            <p class="date">Дата</p>
+            <div class="date_picker">
+              <div class="check_in_block">
+                <label for="check-in" class="label_one label">Заезд</label>
+                <input type="date" id="check-in" name="check-in" />
+                <span class="clear clear_date" id="clear_date_1"></span>
+              </div>
+
+              <div class="departure_block">
+                <label for="departure" class="label_two label">Отъезд</label>
+                <input type="date" id="departure" name="departure" />
+                <span class="clear clear_date" id="clear_date_2"></span>
+              </div>
+            </div>
+          </div>
+          <div class="trip_guest_amount">
+            <p class="guests">Гости</p>
+            <div class="trip_guests">
+              <label for="guest" class="label_three label"
+                >Количество гостей</label
+              >
+              <input type="text" id="guest" name="guest" />
+              <span class="clear clear_guests" id="clear_guests_1"></span>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <h2>Ваши контактные данные:</h2>
+        <div class="contact_inform">
+          <div class="telephone_inform">
+            <p class="telephone"><span class="telephone_icon"></span>Телефон</p>
+            <p class="number">+375 44 730 95 65</p>
+            <div class="change_icon"></div>
+          </div>
+          <div class="person_info">
+            <p class="name_surname"><span class="person_icon"></span>ФИО</p>
+            <p class="full_name">Ягодкина Милена Олеговна</p>
+          </div>
+        </div>
+        <div class="communicated">
+          <p class="communicated_text">Предпочительный способ связи</p>
+          <div class="radio_button">
+            <div class="only_call radio_btn">
+              <input id="radio-1" type="radio" name="radio" value="1" checked />
+              <label for="radio-1">Только звонки</label>
+            </div>
+            <div class="call_and_message radio_btn">
+              <input id="radio-2" type="radio" name="radio" value="2" />
+              <label for="radio-2">Звонки и сообщения</label>
+            </div>
+          </div>
+        </div>
+        <p class="text_under_communicated">
+          В указанном виде связи с вами при необходимости свяжется владелец
+          квартиры, не забывайте проверять :)
+        </p>
+
+        <hr />
+        <h3>Вы можете оставить дополнительный комментарии владельцу:</h3>
+        <textarea
+          class="comment_to_owner"
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="Напишите свой комментарий"
+        ></textarea>
+        <hr class="before_rules" />
+        <p class="rules">
+          Нажимая кнопку ниже, я принимаю условия (Правила дома, установленные
+          хозяином, Правила Domovita в отношении повторного бронирования и
+          возврата средств) и соглашаюсь, что Domovita может списать средства с
+          моего способа оплаты, если ответственность за ущерб лежит на мне.
+        </p>
+        <button class="confirm_pay">Подтвердить и оплатить</button>
+      </section>
+    </div>
+    <hr class="before_footer" />
+    <footer>
+      <div class="footer_wrapper">
+        <div class="logo_rating_btn">
+          <div class="footer_logo">
+            <a href="#" class="link-logo">
+              <img src="./images/Logo_domovita.svg" alt="Domovita" />
+            </a>
+          </div>
+          <div class="rating_btn">
+            <p class="rating">Наш рейтинг 4.7 из 5 (805):</p>
+            <div class="rating-area">
+              <input type="radio" id="star-5" name="rating" value="5" />
+              <label for="star-5" title="Оценка «5»"></label>
+              <input type="radio" id="star-4" name="rating" value="4" />
+              <label for="star-4" title="Оценка «4»"></label>
+              <input type="radio" id="star-3" name="rating" value="3" />
+              <label for="star-3" title="Оценка «3»"></label>
+              <input type="radio" id="star-2" name="rating" value="2" />
+              <label for="star-2" title="Оценка «2»"></label>
+              <input type="radio" id="star-1" name="rating" value="1" />
+              <label for="star-1" title="Оценка «1»"></label>
+            </div>
+            <div class="social_btn">
+              <a href="#" class="btn_facebook link"></a>
+              <a href="#" class="btn_twitter link"></a>
+              <a href="#" class="btn_vk link"></a>
+            </div>
+          </div>
+        </div>
+        <hr class="footer_line" />
+        <div class="footer_nav">
+          <ul class="footer_nav_list">
+            <li class="list_elem">
+              <a href="#" class="footer_list_link">О нас</a>
+            </li>
+            <li class="list_elem">
+              <a href="#" class="footer_list_link">Контакты</a>
+            </li>
+            <li class="list_elem">
+              <a href="#" class="footer_list_link">Реклама</a>
+            </li>
+            <li class="list_elem">
+              <a href="#" class="footer_list_link">Условия использования</a>
+            </li>
+            <li class="list_elem">
+              <a href="#" class="footer_list_link"
+                >Словарь терминов и понятий</a
+              >
+            </li>
+          </ul>
+          <a href="#" class="mobile_version">Мобильная версия</a>
+        </div>
+      </div>
+      <div class="license">
+        <p class="license_text">
+          © 2015 - 2019, Domovita.by. Копирование материалов допускается только
+          при наличии активной ссылки.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="./java_script/script.js"></script>
+</html>
